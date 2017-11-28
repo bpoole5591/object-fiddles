@@ -8,9 +8,10 @@
 
   //Code here
 
-
-
-
+const me = {
+  name: "Brian",
+  age: 31
+}
 
 
 //NEXT PROBLEM
@@ -22,7 +23,14 @@
 
   //Code here
 
-
+const favoriteThings = {
+  band: "Blue October",
+  food: "Dr Pepper",
+  person: "Justin Furstenfeld",
+  book: "Crazy Making",
+  movie: "Argue With a Tree",
+  holiday: "October 29"
+}
 
 
 
@@ -31,7 +39,8 @@
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
+favoriteThings.car = "Jeep";
+favoriteThings.brand = "Dr Pepper";
 
 
 
@@ -39,7 +48,8 @@
 //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 
   //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -60,7 +70,11 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
-
+const backPack = {};
+var item = "firstPocket";
+backPack['item'];
+backPack.firstPocket= "chapstick";
+backPack.color = "black";
 
 
 
@@ -69,7 +83,6 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
- 
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -78,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
   //Code here
-
+console.log(backPack);
 
 
 
@@ -96,11 +109,17 @@ var user2 = {
         birthday: '05/02/1990',
         username: 'tylermcginnis33'
 };
+
+function newFunction() {
+  alert(me.name);
+  alert();
+}
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in"
 
 
 
@@ -122,7 +141,7 @@ var user2 = {
 //Create an empty object called methodCollection.
 
   //Code Here
-
+const methodCollection = {};
 
 
 
@@ -134,15 +153,16 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
-
+methodCollection.alertHello = function(){alert("hello")};
+methodCollection.logHello = function(){console.log('hello')};
 
 
 //Now call your alertHello and logHello methods.
 
   //Code Here
 
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -158,7 +178,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+function makePerson(name, birthday, ssn){
+  return person1 = {
+    name,
+    birthday,
+    ssn
+  };
+}
 
 
 
@@ -172,5 +198,11 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  return card = {
+    cardNumber,
+    expirationDate,
+    securityCode
+  }
+}
 
